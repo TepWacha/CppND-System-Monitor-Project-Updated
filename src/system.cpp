@@ -20,9 +20,7 @@ using std::vector;
 Processor& System::Cpu() { return cpu_; }
 
 // TODO: Return a container composed of the system's processes
-vector<Process>& System::Processes() { return processes_;}
-
-void System::UpdateProcesses() {
+vector<Process>& System::Processes() {
   this->processes_.clear();
   for (int pid : LinuxParser::Pids()) {
     this->processes_.push_back(Process(
@@ -32,8 +30,9 @@ void System::UpdateProcesses() {
         (float) LinuxParser::ActiveJiffies(pid),
         LinuxParser::Ram(pid),
         LinuxParser::UpTime(pid)
-        ));
+            ));
   }
+  return processes_;
 }
 
 // TODO: Return the system's kernel identifier (string)
