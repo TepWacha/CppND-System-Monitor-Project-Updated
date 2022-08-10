@@ -1,0 +1,2 @@
+valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --log-file=/mnt/c/Users/tep.wacharotayangoon/CLionProjects/CppND-System-Monitor-Project-Updated/cmake-build-debug/valgrind-out.txt /mnt/c/Users/tep.wacharotayangoon/CLionProjects/CppND-System-Monitor-Project-Updated/cmake-build-debug/monitor
+/mnt/c/Users/tep.wacharotayangoon/CLionProjects/CppND-System-Monitor-Project-Updated/cmake-build-debug/monitor
